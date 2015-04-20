@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AngularJS Module Flash Detection</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Popover CSS -->
+    <link href="../published/css/angular-ja-flash-detection.css" rel="stylesheet">
+
+
+
+</head>
+
+<body ng-app="ja.dropdownbox" ng-cloak>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">AngularJS Module Flash Detection</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+             
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container">
+
+       <section id="demo"  ng-cloak>
+
+            <div class="page-header">
+
+                <h1>Dropdown Box <small>dropdown-box.directive.js</small></h1>
+
+            </div>
+
+
+            <h3>Using Click Event</h3>
+
+            <div class="example">
+
+                <button class="btn btn-primary" dropdown-box placement="left" target="content-target-left" >Dropdown Box Left</button>
+
+                <div id="content-target-left">
+
+                    <div class="dropdown-box-header">
+                        <h4>Title of Dropdown Box</h4>
+                    </div>
+
+                    <div class="dropdown-box-body">
+                        <ul class="cards">
+                            <li>
+                                <div class="cards-image">
+                                     <img alt="" class="avatar" src="https://avatars3.githubusercontent.com/u/5802946?v=3&s=80" width="80">
+                                 </div>
+                                 <div class="cards-content">
+                                    Content of card
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <button class="btn btn-danger" dropdown-box placement="top" target="content-target-top" >Dropdown Box Top</button>
+
+                <div id="content-target-top">
+
+                    <div class="dropdown-box-header">
+                        <h4>Title of Dropdown Box</h4>
+                    </div>
+
+                    <div class="dropdown-box-body">
+                        <ul class="cards">
+                            <li>
+                                <div class="cards-image">
+                                     <img alt="" class="avatar" src="https://avatars3.githubusercontent.com/u/5802946?v=3&s=80" width="80">
+                                 </div>
+                                 <div class="cards-content">
+                                    Content of card
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <button class="btn btn-info" dropdown-box placement="bottom" target="content-target-bottom" >Dropdown Box Bottom</button>
+
+                <div id="content-target-bottom">
+
+                    <div class="dropdown-box-header">
+                        <h4>Title of Dropdown Box</h4>
+                    </div>
+
+                    <div class="dropdown-box-body">
+                        <ul class="cards">
+                            <li>
+                                <div class="cards-image">
+                                     <img alt="" class="avatar" src="https://avatars3.githubusercontent.com/u/5802946?v=3&s=80" width="80">
+                                 </div>
+                                 <div class="cards-content">
+                                    Content of card
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <button class="btn btn-success" dropdown-box placement="right" target="content-target-right" >Dropdown Box Right</button>
+
+                <div id="content-target-right">
+
+                    <div class="dropdown-box-header">
+                        <h4>Title of Dropdown Box</h4>
+                    </div>
+
+                    <div class="dropdown-box-body">
+                        <ul class="cards">
+                            <li>
+                                <div class="cards-image">
+                                     <img alt="" class="avatar" src="https://avatars3.githubusercontent.com/u/5802946?v=3&s=80" width="80">
+                                 </div>
+                                 <div class="cards-content">
+                                    Content of card
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <h3>Using Mouseover Event</h3>
+
+            <div class="example">
+
+                <button class="btn btn-primary" dropdown-box mouseover delay placement="right" target="content-mouseover-target" >Dropdown Box</button>
+
+                <div id="content-mouseover-target">
+                    <div class="dropdown-box-header">
+                        <h4>Title of Dropdown Box</h4>
+                    </div>
+                    <div class="dropdown-box-body">
+                        <ul class="cards">
+                            <li>
+                                <div class="cards-image">
+                                     <img alt="" class="avatar" src="https://avatars3.githubusercontent.com/u/5802946?v=3&s=80" width="80">
+                                 </div>
+                                 <div class="cards-content">
+                                    Content of card
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="usage">
+
+            <h2>Usage</h2>
+
+            <p>Via attributes, the dropdown box directive toggles hidden content by toggling the <code>.in</code> class on the parent item.</p>
+        
+            <p>Add <code>dropdown-box</code> attribute to a link or a button.</p>
+
+            <br/>
+
+            <h4>Setting the content target</h4>
+
+            <p>Use the attribute <code>target="content"</code> as value of the #id of the content referenced in the dropdown-box</p>
+    
+            
+            <h4>Directions</h4>
+
+            <p>For setting direction, use <code>placement="value"</code> and one of following values <span class="label label-primary">left</span> <span class="label label-primary">right</span> <span class="label label-primary">top</span> <span class="label label-primary">bottom</span></p>
+
+
+            <h4>Disable arrow</h4>
+
+            <p>If you want disable the <strong>arrow</strong> of container that will toggle adding attribute <code>arrow="false"</code>.</p>
+
+
+            <h4>Mouseover Event</h4>
+
+            <p>You can allow use of the event <strong>mouseover</strong> adding attribute <code>mouseover</code></p>
+
+            <h4>Delay</h4>
+
+            <p>You can use <strong>delay</strong> in milliseconds for events <strong>mouseover</strong> adding attribute <code>delay="4000"</code> or only <code>delay</code> <i>(default=2000)</i></p>
+
+
+        </section>
+
+
+    </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../vendor/jquery/jquery.js"></script>
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="../published/js/application.js"></script>
+
+
+</body>
+</html>
