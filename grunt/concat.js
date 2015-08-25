@@ -9,6 +9,6 @@ module.exports = {
 
     app: {
         src:'<%= pkg.application.src.js %>/**/*.js',
-        dest: '<%= pkg.application.published.js%>/application.js'
+        dest: '<%= pkg.application.published.js%>/<%=pkg.application.name%>.js'
     }
 };

@@ -1,0 +1,65 @@
+<!--.flash-unlock -->
+<div class="modal-header">
+
+    <button type="button" class="sl-close" ng-click="close()">
+        &times;
+    </button>
+
+    <h3 class="modal-title">
+        <?=$this->lang->line('Flash_Unlock_Title')?>
+    </h3>
+
+</div>
+<div class="modal-body" ng-class="getClass()">
+
+    <div class="row">
+
+        <div class="col-sm-12" ng-class="{'col-md-12': browserDefault, 'col-md-6': !browserDefault}">
+
+            <div class="flash-descriptions">
+
+                <p><?=$this->lang->line('Flash_Unlock_Description')?></p>
+
+                <div class="flash-suggest">
+
+                    <p><?=$this->lang->line('Flash_Unlock_Suggest')?></p>
+
+                    <!-- Chrome -->
+                    <div class="flash-suggest-chrome">
+                        <?=Tools::ParamsToString($this->lang->line('Flash_Unlock_Chrome'), $this->lang->line('Sexlog_url'))?>
+                    </div>
+
+                    <!-- Firefox -->
+                    <div class="flash-suggest-firefox">
+                        <?=$this->lang->line('Flash_Unlock_Firefox')?>
+                    </div>
+
+                    <!-- IE -->
+                    <div class="flash-suggest-ie">
+                        <?=$this->lang->line('Flash_Unlock_IE')?>
+                    </div>
+
+                    <!-- Safari -->
+                    <div class="flash-suggest-safari">
+                        <?=Tools::ParamsToString($this->lang->line('Flash_Unlock_Safari'), $this->lang->line('Sexlog_url'))?>
+                    </div>
+
+                </div>
+
+                <p><?=Tools::ParamsToString($this->lang->line('Flash_Questions'), '<a ng-click="close()" href="'.$this->lang->line('link_support').'" target="_blank">' . $this->lang->line('link_support'). '</a>')?></p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6 hidden-xs hidden-sm" ng-hide="browserDefault">
+
+            <div class="flash-unlock-images">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

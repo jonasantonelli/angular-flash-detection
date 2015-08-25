@@ -1,0 +1,46 @@
+<!--.flash-install -->
+<div class="modal-header">
+
+    <button type="button" class="sl-close" ng-click="close()">
+        &times;
+    </button>
+
+    <h3 class="modal-title">
+        <?=$this->lang->line('Flash_Update_Title')?>
+    </h3>
+
+</div>
+<div class="modal-body">
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <div class="flash-descriptions" bindonce>
+
+                <p><?=$FlashDescription?></p>
+
+                <p><?=Tools::ParamsToString($this->lang->line('Flash_HowToDo'), '<a ng-click="close()" href="'.$this->lang->line("link_install_flash").'"target="_blank" >'. $this->lang->line("link_install_flash") . '</a>')?></p>
+
+                <p><?=Tools::ParamsToString($this->lang->line('Flash_Questions'), '<a ng-click="close()" href="'.$this->lang->line('link_support').'" target="_blank">' . $this->lang->line('link_support'). '</a>')?></p>
+
+                <a ng-click="close()" class="sl-btn btn-primary btn-flash-install" href="<?=$this->lang->line('link_install_flash')?>" target="_blank">
+                    <?=$this->lang->line('Flash_Update_Button')?>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6 hidden-xs hidden-sm">
+
+            <div class="flash-update-images ">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
