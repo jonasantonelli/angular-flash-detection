@@ -8,7 +8,7 @@ module.exports = {
     },
 
     app: {
-        src:'<%= pkg.assets.config.application %>/**/*.js',
-        dest: '<%= pkg.assets.config.published.js%>/application.js'
-    },
+        src:'<%= pkg.application.src.js %>/**/*.js',
+        dest: '<%= pkg.application.published.js%>/application.js'
+    }
 };

@@ -11,8 +11,8 @@ module.exports = function(grunt) {
         },
 
         app: {
-            src: '<%= pkg.assets.config.less %>/**/*.less',
-            dest: '<%= pkg.assets.config.published.css %>/<%= pkg.assets.config.name %>.css'
+            src: '<%= pkg.application.src.less %>/**/*.less',
+            dest: '<%= pkg.application.published.css %>/<%= pkg.application.name %>.css'
         }
      
     };

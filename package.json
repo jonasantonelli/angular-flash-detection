@@ -1,52 +1,48 @@
 {
-  "name": "AngularFlashDetection",
-  "description": "AngularJS Module Flash Detection",
-  "version": "1.0.0",
-  "homepage": "",
-  "author": "Jonas Antonell",
-  "private": false,
-  "assets": {
-    "config": {
-      "name": "angular-ja-flash-detection",
-      "less": "assets/less",
-      "application": "assets/application",
-      "published": {
-        "js": "assets/published/js",
-        "css": "assets/published/css",
-        "images": "assets/published/images"
-      }
-    },
-    "watch": {
-      "less": "assets/less",
-      "js": "assets/application"
+    "name": "AngularFlashDetection",
+    "description": "Service Flash Detection - AngularJS",
+    "version": "1.0.0",
+    "homepage": "",
+    "author": "Jonas Antonell",
+    "private": false,
+    "application": {
+        "name": "angular-flash-detection",
+        "src": {
+            "less": "application/src/less",
+            "js": "application/src/js"
+        },
+        "published":{
+            "css": "application/published/css",
+            "js": "application/published/js"
+        },
+        "watch": {
+            "less": "application/src/less",
+            "js": "application/src/js"
+        }
     },
     "bootstrap": {
-      "name": "bootstrap",
-      "js": "assets/vendor/bootstrap/js",
-      "css": "assets/vendor/bootstrap/css"
+        "name": "bootstrap",
+        "js": "vendor/bootstrap/js",
+        "css": "vendor/bootstrap/css"
     },
     "angular": {
-      "folder": "assets/vendor/angular/"
+        "folder": "vendor/angular/"
+    },
+    "devDependencies": {
+        "grunt": "latest",
+        "grunt-autoprefixer": "latest",
+        "grunt-contrib-concat": "latest",
+        "grunt-contrib-jshint": "latest",
+        "grunt-contrib-less": "latest",
+        "grunt-contrib-watch": "latest",
+        "grunt-csscomb": "latest",
+        "grunt-exec": "latest",
+        "grunt-notify": "latest",
+        "load-grunt-config": "latest",
+        "load-grunt-tasks": "latest",
+        "time-grunt": "latest"
+    },
+    "engines": {
+        "node": "~0.10.35"
     }
-  },
-  "source": "src",
-  "devDependencies": {
-    "grunt": "latest",
-    "grunt-autoprefixer": "latest",
-    "grunt-contrib-concat": "latest",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-jshint": "latest",
-    "grunt-contrib-less": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-csscomb": "latest",
-    "grunt-exec": "latest",
-    "grunt-notify": "latest",
-    "load-grunt-config": "latest",
-    "load-grunt-tasks": "latest",
-    "time-grunt": "latest",
-    "grunt-contrib-copy": "latest"
-  },
-  "engines": {
-    "node": "~0.10.35"
-  }
 }

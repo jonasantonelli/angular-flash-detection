@@ -1,4 +1,5 @@
 /*
+ * Angular-Check-Flash
  * Copyright 2015 Jonas Antonelli
  */
 
@@ -22,8 +23,7 @@ module.exports = function(grunt) {
         'less',
         'autoprefixer',
         'concat:app',
-        'jshint:angular',
-        'copy'
+        'jshint:angular'
     ]);
 
 

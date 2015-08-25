@@ -9,7 +9,7 @@ module.exports = {
     all: {
         flatten: true,
         expand: true,
-        src: '<%= pkg.assets.config.published.css %>/*.css',
-        dest: '<%= pkg.assets.config.published.css %>/'
+        src: '<%= pkg.application.published.css %>/*.css',
+        dest: '<%= pkg.application.published.css %>/'
     }
 };

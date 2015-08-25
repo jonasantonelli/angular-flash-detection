@@ -8,7 +8,7 @@ module.exports = {
     
     // AngularJS
     angular: [
-        '<%= pkg.assets.config.application %>/**/*.js'
+        '<%= pkg.application.src.js%>/**/*.js'
     ],
 
 
